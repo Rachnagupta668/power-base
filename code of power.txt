@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    //n=number or base
+	    int n = sc.nextInt();
+	   //power is power value
+	    int power =sc.nextInt();
+	    int result=1;
+	    //result means when ex 2 ^5 then firstly 2*2 then when i get result then 2^4 then again multiply then get result so continiously we multiply to i and then get final result
+	     
+        for(int i= 1; i<=power; i++){
+	    result*=n;
+	    }
+		System.out.println(result);
+	}
+}
